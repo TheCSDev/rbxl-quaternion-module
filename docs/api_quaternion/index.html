@@ -558,28 +558,28 @@ In other words, do not use <code>type(quaternion) == 'Quaternion'</code>, instea
 </div>
 <h2 id="fields">Fields</h2>
 <details class="note note">
-<summary>W - number</summary>
+<summary>W : number</summary>
 <p><strong>Type:</strong> number<br/>
 <strong>Default value:</strong> 1<br/>
 <br/>
 The W value of the quaternion</p>
 </details>
 <details class="note note">
-<summary>X - number</summary>
+<summary>X : number</summary>
 <p><strong>Type:</strong> number<br/>
 <strong>Default value:</strong> 0<br/>
 <br/>
 The X value of the quaternion</p>
 </details>
 <details class="note note">
-<summary>Y - number</summary>
+<summary>Y : number</summary>
 <p><strong>Type:</strong> number<br/>
 <strong>Default value:</strong> 0<br/>
 <br/>
 The Y value of the quaternion</p>
 </details>
 <details class="note note">
-<summary>Z - number</summary>
+<summary>Z : number</summary>
 <p><strong>Type:</strong> number<br/>
 <strong>Default value:</strong> 0<br/>
 <br/>
@@ -610,10 +610,11 @@ Example: 1,0,0,0</p>
 </details>
 <h3 id="conversion-functions">Conversion functions</h3>
 <details class="note note">
-<summary>ToCFrame(self : Quaternion) : CFrame</summary>
+<summary>ToCFrame(self : Quaternion, position : Vector3?) : CFrame</summary>
 <p><strong>Returns:</strong> CFrame<br/>
 <br/>
-Converts the quaternion to a CFrame, and then returns the CFrame.</p>
+Converts the quaternion to a CFrame, and then returns the CFrame.<br/>
+The position argument is optional. It's default value is Vector3.new().</p>
 </details>
 <details class="note note">
 <summary>ToEulerRadians(self : Quaternion) : Vector3</summary>
@@ -677,6 +678,18 @@ Inverses the quaternion.</p>
 <p><strong>Returns:</strong> self<br/>
 <br/>
 Concatenates the quaternion.</p>
+</details>
+<details class="note note">
+<summary>Lerp(self : Quaternion, quaternionB : Quaternion, amount : number) : Quaternion</summary>
+<p><strong>Returns:</strong> self<br/>
+<br/>
+Linearly interpolates between this and a given quaternion.</p>
+</details>
+<details class="note note">
+<summary>Slerp(self : Quaternion, quaternionB : Quaternion, amount : number) : Quaternion</summary>
+<p><strong>Returns:</strong> self<br/>
+<br/>
+Interpolates between this and a given quaternion, using spherical linear interpolation.</p>
 </details>
 
               

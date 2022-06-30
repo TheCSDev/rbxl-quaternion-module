@@ -10,25 +10,25 @@ A table that represents a quaternion.
 
 ## Fields
 
-??? note note "W - number"
+??? note note "W : number"
 	**Type:** number<br/>
 	**Default value:** 1<br/>
 	<br/>
 	The W value of the quaternion
 
-??? note note "X - number"
+??? note note "X : number"
 	**Type:** number<br/>
 	**Default value:** 0<br/>
 	<br/>
 	The X value of the quaternion
 
-??? note note "Y - number"
+??? note note "Y : number"
 	**Type:** number<br/>
 	**Default value:** 0<br/>
 	<br/>
 	The Y value of the quaternion
 
-??? note note "Z - number"
+??? note note "Z : number"
 	**Type:** number<br/>
 	**Default value:** 0<br/>
 	<br/>
@@ -58,10 +58,11 @@ A table that represents a quaternion.
 
 ### Conversion functions
 
-??? note note "ToCFrame(self : Quaternion) : CFrame"
+??? note note "ToCFrame(self : Quaternion, position : Vector3?) : CFrame"
 	**Returns:** CFrame<br/>
 	<br/>
-	Converts the quaternion to a CFrame, and then returns the CFrame.
+	Converts the quaternion to a CFrame, and then returns the CFrame.<br/>
+	The position argument is optional. It's default value is Vector3.new().
 
 ??? note note "ToEulerRadians(self : Quaternion) : Vector3"
 	**Returns:** Vector3<br/>
@@ -118,3 +119,13 @@ A table that represents a quaternion.
 	**Returns:** self<br/>
 	<br/>
 	Concatenates the quaternion.
+
+??? note note "Lerp(self : Quaternion, quaternionB : Quaternion, amount : number) : Quaternion"
+	**Returns:** self<br/>
+	<br/>
+	Linearly interpolates between this and a given quaternion.
+
+??? note note "Slerp(self : Quaternion, quaternionB : Quaternion, amount : number) : Quaternion"
+	**Returns:** self<br/>
+	<br/>
+	Interpolates between this and a given quaternion, using spherical linear interpolation.

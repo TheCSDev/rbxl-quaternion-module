@@ -358,6 +358,13 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#constructors" class="md-nav__link">
+    Constructors
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#functions" class="md-nav__link">
     Functions
   </a>
@@ -449,6 +456,13 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#constructors" class="md-nav__link">
+    Constructors
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#functions" class="md-nav__link">
     Functions
   </a>
@@ -479,7 +493,7 @@ is actually <code>ToString(self : table)</code> because quaternions are just reg
 <br/>
 In other words, do not use <code>type(quaternion) == 'Quaternion'</code>, instead use <code>type(quaternion) == 'table'</code>.</p>
 </div>
-<h2 id="functions">Functions</h2>
+<h2 id="constructors">Constructors</h2>
 <details class="note note">
 <summary>new(w : number?, x : number?, y : number?, z : number?) : Quaternion</summary>
 <p><strong>Returns:</strong> table (Quaternion)<br/>
@@ -515,6 +529,21 @@ Creates a new quaternion from XYZ Euler angles in degrees.</p>
 <p><strong>Returns:</strong> table (Quaternion)<br/>
 <br/>
 Creates a new quaternion from Vector3 Euler angles in degrees.</p>
+</details>
+<h2 id="functions">Functions</h2>
+<details class="note note">
+<summary>Lerp(qt1 : Quaternion, qt2 : Quaternion, amount : number) : Quaternion</summary>
+<p><strong>Returns:</strong> table (Quaternion)<br/>
+<br/>
+Linearly interpolates between two given quaternions.
+Returns a new quaternion, without affecting any given quaternions.</p>
+</details>
+<details class="note note">
+<summary>Slerp(qt1 : Quaternion, qt2 : Quaternion, amount : number) : Quaternion</summary>
+<p><strong>Returns:</strong> table (Quaternion)<br/>
+<br/>
+Interpolates between two given quaternions, using spherical linear interpolation.
+Returns a new quaternion, without affecting any given quaternions.</p>
 </details>
 
               

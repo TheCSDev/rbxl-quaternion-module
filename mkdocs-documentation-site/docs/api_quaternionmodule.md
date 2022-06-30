@@ -10,7 +10,7 @@ The main quaternion module. This module is used for creation of quaternions.
 	<br/>
 	In other words, do not use `type(quaternion) == 'Quaternion'`, instead use `type(quaternion) == 'table'`.
 
-## Functions
+## Constructors
 
 ??? note note "new(w : number?, x : number?, y : number?, z : number?) : Quaternion"
 	**Returns:** table (Quaternion)<br/>
@@ -41,3 +41,17 @@ The main quaternion module. This module is used for creation of quaternions.
 	**Returns:** table (Quaternion)<br/>
 	<br/>
 	Creates a new quaternion from Vector3 Euler angles in degrees.
+
+## Functions
+
+??? note note "Lerp(qt1 : Quaternion, qt2 : Quaternion, amount : number) : Quaternion"
+	**Returns:** table (Quaternion)<br/>
+	<br/>
+	Linearly interpolates between two given quaternions.
+	Returns a new quaternion, without affecting any given quaternions.
+
+??? note note "Slerp(qt1 : Quaternion, qt2 : Quaternion, amount : number) : Quaternion"
+	**Returns:** table (Quaternion)<br/>
+	<br/>
+	Interpolates between two given quaternions, using spherical linear interpolation.
+	Returns a new quaternion, without affecting any given quaternions.

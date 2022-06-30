@@ -84,6 +84,7 @@ local vector3InRadians = quaternion:ToEulerRadians();
 ```lua
 local quaternion = qtModule.new();
 local cframe     = quaternion:ToCFrame();
+local cframeWPos = quaternion:ToCFrame(Vector3.new(0,10,0)); -- With position
 ```
 
 ### To string
