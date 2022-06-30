@@ -84,4 +84,6 @@ local qtNormalized   = qt:Clone():Normalize();
 local qtConjugated   = qt:Clone():Conjugate();
 local qtInversed     = qt:Clone():Inverse();
 local qtConcatenated = qt:Clone():Concatenate(qtModule.new());
+local qtLerped       = qt:Clone():Lerp(anotherQuaternion, 0.5);
+local qtSlerped      = qt:Clone():Slerp(anotherQuaternion, 0.5);
 ```

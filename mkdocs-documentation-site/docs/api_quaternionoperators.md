@@ -1,7 +1,7 @@
 # QuaternionOperators
 
 This module is used by the quaternion metatable to allow for use of
-mathematical operators on quaternions. You do not need to `requre()`
+mathematical operators on quaternions. You do not need to `require()`
 this module in order to perform mathematical operations on quaternions.
 
 !!! note tip

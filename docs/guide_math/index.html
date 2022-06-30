@@ -628,6 +628,8 @@ For exapmle: <code>local qtNormalized = quaternion:Clone():Normalize();</code>.<
 <span class="kd">local</span> <span class="n">qtConjugated</span>   <span class="o">=</span> <span class="n">qt</span><span class="p">:</span><span class="n">Clone</span><span class="p">():</span><span class="n">Conjugate</span><span class="p">();</span>
 <span class="kd">local</span> <span class="n">qtInversed</span>     <span class="o">=</span> <span class="n">qt</span><span class="p">:</span><span class="n">Clone</span><span class="p">():</span><span class="n">Inverse</span><span class="p">();</span>
 <span class="kd">local</span> <span class="n">qtConcatenated</span> <span class="o">=</span> <span class="n">qt</span><span class="p">:</span><span class="n">Clone</span><span class="p">():</span><span class="n">Concatenate</span><span class="p">(</span><span class="n">qtModule</span><span class="p">.</span><span class="n">new</span><span class="p">());</span>
+<span class="kd">local</span> <span class="n">qtLerped</span>       <span class="o">=</span> <span class="n">qt</span><span class="p">:</span><span class="n">Clone</span><span class="p">():</span><span class="n">Lerp</span><span class="p">(</span><span class="n">anotherQuaternion</span><span class="p">,</span> <span class="mf">0.5</span><span class="p">);</span>
+<span class="kd">local</span> <span class="n">qtSlerped</span>      <span class="o">=</span> <span class="n">qt</span><span class="p">:</span><span class="n">Clone</span><span class="p">():</span><span class="n">Slerp</span><span class="p">(</span><span class="n">anotherQuaternion</span><span class="p">,</span> <span class="mf">0.5</span><span class="p">);</span>
 </code></pre></div>
 
               
